@@ -20,8 +20,17 @@ body{
     background-color: rgb(56, 16, 80);
     color: aliceblue;
     font-family: var(--texto-corpo);
+} 
+
+.cabecalho-nav__link{
+background-color: var(--cor-primaria);
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10%;
+}
+.cabecalho-img{
+    width: 10%;
+    border-radius: 100%;
 }
 
-.titulo-pricipal {
-    font-family: var(--tesxto-titulo);
-}
