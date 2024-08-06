@@ -1,36 +1,193 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-   margin: 0;
-   padding: 0;
-
+    margin: 0;
+    padding: 0;
 }
 
 :root{
-    --cor-primaria: #10002b;
-    --cor-secundaria: #240046;
-    --cor-tercearia: #3C096C;
-    --cor-quatearia: #5A189A;
-    --cor-quintearia: #7B2CBF;
-    --texto-corpo: "Viga", sans-serif;
-    --texto-titulo: "Outfit", sans-serif;
+    --Roxo-forte: #3c096c;
+    --Roxo: #5A189A;
+    --Roxo-claro: #9D4EDD;
+    --verde:  rgb(8, 148, 3);
+    --branco-smoke: #f6f6f5ff;
+    --preto: #14213d;
+    --cinza: #72717
+    --texto-corpo:"Poetsen One", sans-serif;
+    --texto-titulo:"Raleway", sans-serif;
+
 }
 
 body{
-    background-color: rgb(56, 16, 80);
-    color: aliceblue;
+    background-color: var(--preto);
+    color: var(--preto);
     font-family: var(--texto-corpo);
-} 
-
-.cabecalho-nav__link{
-background-color: var(--cor-primaria);
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10%;
 }
+
+.titulo-principal{
+    font-family: var(--texto-titulo);
+}   
+
+.cabecalho{
+    background-color: var(--preto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border:  2px solid #bbb;
+}
+
 .cabecalho-img{
     width: 10%;
     border-radius: 100%;
+}
+
+.cabecalho-nav__link-home{
+    text-decoration: none;
+    font-family: var(--texto-titulo);
+    font-size: 24px;
+    color: #727171;
+    margin-right: 24px;
+}   
+
+
+.cabecalho-nav__link-contato{
+    text-decoration: none;
+    font-family: var(--texto-titulo);
+    font-size: 24px;
+    color: var(--branco-smoke);
+    margin-right: 24px;
+}
+.cabecalho-nav__link-contato:hover{
+    color: #727171;
+}
+
+.principal-capa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    background-image: url(img/capa2.jpg);
+    background-size: 20%;
+}
+
+.principal-capa__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 200px;
+}
+
+.principal-capa__titulo{
+  font-family: var(--texto-titulo); 
+  font-size: 32px;
+  color: var(--branco-smoke);
+  margin-bottom: 12px;
+}
+
+.principal-capa__texto{
+    font-size: 24px;
+    margin-top: 24px;
+    color: var(--branco-smoke);
+}
+
+.principal-capa__combotao{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.principal-capa__botao{
+    background-color: #1b1b1b;
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 2em;
+    color: var(--branco-smoke);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.principal-capa__botao:hover{
+background: #302f2f
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border:  2px solid var(--branco-smoke);
+    color: #f5f5f5;
+}
+
+.propaganda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 7em;
+    color: var(--branco-smoke);
+}
+
+.propaganda__imagem{
+    width: 100%;
+}
+
+.propaganda__titulo{
+ font-family: var(--texto-titulo);
+ font-size: 40px;
+ color: var(bra);
+}
+.propaganda__titulo:hover{
+    text-shadow: 3px 3px5px var(--preto);
+    
+}
+
+.propaganda__texto{
+    font-size: 24px;
+    color: var(--branco-smoke);
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+ font-family: var(--texto-titulo);
+ font-size: 48px;
+ color: var(--Roxo);
+}
+
+.dispositos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 24px;
+    color: var(--branco-smoke);
+}
+
+.rodape_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{
+  text-decoration: none;
+  color: var(--branco-smoke);
+  margin-left: 1em;
+}
+
+.rodape__texto{
+    margin: 1em 0;
+    color: var(--branco-smoke);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
 }
 
